@@ -3,11 +3,41 @@
 <head>
 	<title>Ruby Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="assets/javascript/game.js"></script>
 </head>
 <body>
-<p>Hello</p>
+<h1>CrytalsCollector!</h1>
 
+<div>
+	<p>You will be given a random number at the start of the game.</p>
+	<p>There are four crytals below. By Clicking on a crystal you will add a specific amount of points to your total score</p>
+	<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+	<p>The value of each crytal is hidden from you until you click on it.</p>
+	<p>Each time when the game starts, the game will change the values of each crystal.</p>
+</div>
+<div>
+	<p id="answerNumb">Answer number</p>
+	<p>Wins/Losses</p>
+</div>
+<div>
+	<p>Crystals</p>
+	<button id="Ruby" class="crystalsClass">Ruby</button>
+	<button id="Diamond" class="crystalsClass">Diamond</button>
+	<button id="Citrine" class="crystalsClass">Citrine</button>
+	<button id="Emerald" class="crystalsClass">Emerald</button>
+</div>
+<div>
+	<p>Your total score is:</p>
+</div>
+<div>
+	<p id="totalScore"> </p>
+</div>
 </body>
 </html>
