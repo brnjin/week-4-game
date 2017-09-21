@@ -1,8 +1,13 @@
+var crystalTotalNumber;
+var answerNumber;
+var wins;
+var losses; 
+
 $(document).ready(function() {
-	var wins = 0;
-	var losses = 0;
-	var crystalTotalNumber = 0; 
-	var answerNumber = [];
+	wins = 0;
+	losses = 0;
+	crystalTotalNumber = 0; 
+	answerNumber = "";
 
 	//Reset when the game is over
 	function startUp (){
@@ -14,7 +19,20 @@ $(document).ready(function() {
 		//Sets random number to play
 		$('#answerNumb').text(answerNumber);
 	};
-
+	function winLoss() {
+		$('#totalScore').text (crystalTotalNumber);
+		if (answerNumber === crystalTotalNumber) {
+		wins++;
+		$('#wins').html("'You have' + wins");
+		alert("You WON!");
+		console.log(answerNumber);
+		console.log(crystalTotalNumber);
+	};
+		if (crystalTotalNumber > answerNumber) {
+		losses ++;
+		alert("You lost!");
+	};
+};
 		//Random number set for crystals
 	var rubyNumber = (Math.floor(Math.random() * 12) + 1);
 	var diamondNumber = (Math.floor(Math.random() * 12) + 1);
@@ -28,29 +46,26 @@ $(document).ready(function() {
 		//adds together random ruby number to total
 		crystalTotalNumber = crystalTotalNumber + rubyNumber;
 		console.log(crystalTotalNumber);
-		$('#totalScore').text (crystalTotalNumber);	
+	winLoss();	
 	});
 	$('#Diamond').on('click', function() {
 		crystalTotalNumber = crystalTotalNumber + diamondNumber;
 		console.log(crystalTotalNumber);
-		$('#totalScore').text (crystalTotalNumber);
+	winLoss();
 	});
 	$('#Citrine').on('click', function() {
 		crystalTotalNumber = crystalTotalNumber + citrineNumber;
 		console.log(crystalTotalNumber);
-		$('#totalScore').text (crystalTotalNumber);	
+	winLoss();
 	});
 	$('#Emerald').on('click', function() {
 		crystalTotalNumber = crystalTotalNumber + emeraldNumber;
 		console.log(crystalTotalNumber);
-		$('#totalScore').text (crystalTotalNumber);	
-	})
-
-	if (crystalTotalNumber === answerNumber) {
-		wins = wins + 1;
-	}
-	console.log(wins);
+	winLoss();
+	});
 });
+
+
 
 
 
