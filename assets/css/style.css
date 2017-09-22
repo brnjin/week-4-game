@@ -1,0 +1,9 @@
+button {
+	border-color: black;
+	box-shadow: none;
+	color: white;
+}
+body {
+	background: url("../images/fruits-background.jpg");
+	background-size: cover;
+}

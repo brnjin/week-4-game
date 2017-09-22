@@ -2,7 +2,7 @@
 <!-- Do the lord of the rings  -->
 <html>
 <head>
-	<title>Ruby Game</title>
+	<title>Fruit Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,32 +14,61 @@
 	<script src="assets/javascript/game.js"></script>
 </head>
 <body>
-<h1>CrytalsCollector!</h1>
-
-<div>
-	<p>You will be given a random number at the start of the game.</p>
-	<p>There are four crytals below. By Clicking on a crystal you will add a specific amount of points to your total score</p>
-	<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
-	<p>The value of each crytal is hidden from you until you click on it.</p>
-	<p>Each time when the game starts, the game will change the values of each crystal.</p>
-</div>
-<div>
-	<p id="answerNumb">0</p>
-	<p id="wins">Wins: </p>
-	<p id="losses">Losses: </p>
-</div>
-<div>
-	<p>Crystals</p>
-	<button id="Ruby" class="crystalsClass">Ruby</button>
-	<button id="Diamond" class="crystalsClass">Diamond</button>
-	<button id="Citrine" class="crystalsClass">Citrine</button>
-	<button id="Emerald" class="crystalsClass">Emerald</button>
-</div>
-<div>
-	<p>Your total score is:</p>
-</div>
-<div>
-	<p id="totalScore">0</p>
+<br>
+	<h1><center><strong>Fruits Collector!</strong></center></h1>
+<br>
+<div class="container">
+	<div class="row col-md-offset-3">
+		<div class="col-md-8">
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"><center>How to Play</center></h3>
+			  </div>
+			  <div class="panel-body">
+					<p>You will be given a random number at the start of the game.</p>
+					<p>There are four fruits below. By Clicking on a fruit you will add a specific amount of points to your total score.</p>
+					<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+					<p>The value of each fruit is hidden from you until you click on it.</p>
+					<p>Each time when the game starts, the game will change the values of each fruit.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="row col-md-offset-4">
+		<div class="col-md-8">
+			<button id="Ruby" class="crystalsClass"><img src="assets/images/tomato.png" width="60" height="60" alt="Ruby" /></button>
+			<button id="Diamond" class="crystalsClass"><img src="assets/images/grapes.png" width="60" height="60" alt="Diamond" /></button>
+			<button id="Citrine" class="crystalsClass"><img src="assets/images/banana.png" width="60" height="60" alt="Citrine" /></button>
+			<button id="Emerald" class="crystalsClass"><img src="assets/images/orange.png" width="60" height="60" alt="Emerald" /></button>
+		</div>
+	</div>
+	<br>
+	<div class="row">	
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<p>Current random number:</p>
+					<p id="answerNumb">0</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<p>Your total score is:</p>
+					<p id="totalScore">0</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<p id="wins">Wins: </p>
+					<p id="losses">Losses: </p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
