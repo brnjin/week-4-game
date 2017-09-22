@@ -81,12 +81,3 @@ $(document).ready(function() {
 		};
 	};	
 });
-
-
-
-
-
-
-
-//number will keep adding up until it matches the given number or surpasses it
-//reset the game once the game is over
