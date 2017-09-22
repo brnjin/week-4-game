@@ -9,9 +9,12 @@ body {
 }
 h1 {
 	color: #FFDB00;
-	text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #fruitsIcons {
 	padding-left: 35px;
+}
+.panel {
+	border-color: black;
 }
