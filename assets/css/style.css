@@ -7,3 +7,11 @@ body {
 	background: url("../images/fruits-background.jpg");
 	background-size: cover;
 }
+h1 {
+	color: #FFDB00;
+	text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+#fruitsIcons {
+	padding-left: 35px;
+}
