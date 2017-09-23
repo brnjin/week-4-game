@@ -3,7 +3,7 @@ var answerNumber;
 var rubyNumber;
 var diamondNumber;
 var citrineNumber;
-var emeraldNumb
+var emeraldNumber;
 
 // Initial Set up at the beginning and end of game
 function startUp (){
